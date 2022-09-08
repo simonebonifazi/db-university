@@ -18,7 +18,7 @@ WHERE `cfu`> 10;
 
 SELECT * 
 FROM `students` 
-WHERE YEAR(`date_of_birth`) < 1992;
+WHERE YEAR(`date_of_birth`) < 1992; --TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE() )
 
 -- 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 
@@ -31,7 +31,7 @@ AND `period`= 'I semestre';
 SELECT * 
 FROM `exams` 
 WHERE `date` = '2020-06-20' 
-AND `hour`> '14:00:00';
+AND `hour`> '14:00:00'; --14
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
 
 SELECT * 
